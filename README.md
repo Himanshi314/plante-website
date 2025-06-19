@@ -1,26 +1,37 @@
-# 🌿 Plante — Smart Plant Care & Wellness Platform
+# 🌱 Plante
 
-Plante is a beautifully designed, interactive website that blends the serenity of plant care with smart tools like checklists and voice assistance. Built with HTML, CSS, JavaScript, and FastAPI, this platform provides a calming experience while helping users track and care for their plants efficiently.
-
----
-
-## ✨ Features
-
-- ✅ Interactive checklist for plant maintenance
-- 🗣️ Voice assistant support
-- 🌓 Light/Dark theme toggle
-- 💬 Testimonials section with slider
-- 🔄 Smooth animations (ScrollReveal.js, SwiperJS)
-- 🔐 Secure handling of API keys via `.env`
-- 💻 FastAPI backend integration
+Plante is a responsive plant care website with features like voice assistance, checklists, theme toggle, and smooth animations. Built using HTML, CSS, JavaScript, and FastAPI for backend integration.
 
 ---
 
-## 🖥️ Live Demo
+## Features
 
-> Coming soon... (You can deploy on [Render](https://render.com/), [Vercel](https://vercel.com/), or [Netlify](https://www.netlify.com/))
+- ✅ Plant care checklist
+- 🗣️ Voice assistant
+- 🌙 Light/Dark mode
+- 💬 Testimonials carousel
+- 🔄 Smooth scroll animations
+- ⚙️ FastAPI backend with environment variables
 
 ---
 
-## 📁 Folder Structure
+## Tech Stack
+
+- **Frontend**: HTML, CSS, JavaScript  
+- **Backend**: FastAPI (Python)  
+- **Libraries**: ScrollReveal, SwiperJS  
+- **Security**: `.env` for sensitive keys
+
+---
+
+## Run Locally( The API Keys folder have been removed due to security reasons,the video provided shows how the voice assistant works)
+
+```bash
+git clone https://github.com/Himanshi314/plante-website.git
+cd plante-website
+
+# Backend setup
+cd plante-ai-backend
+pip install -r requirements.txt
+uvicorn main:app --reload
 
