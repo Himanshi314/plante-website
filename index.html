@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+     
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
+
+
+  <!--=============== REMIXICONS (FIXED CDN) ===============-->
+  
+
+  <!--=============== SWIPER CSS (optional) ===============-->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <title>Planté</title>
+
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+        <nav class="nav container">
+        <a href="#" class="nav__logo"></a>
+        <img src="assets/img/favicon1.png" alt="image">
+        <div class= "nav__menu" id="nav-menu">
+           <ul class="nav__list">
+             <li>
+                <a href="#home" class="nav__link active-link">Home</a>         
+             </li>
+              <li>
+                <a href="#vibe" class="nav__link">Vibe</a>         
+             </li>
+              <li>
+                <a href="#shop" class="nav__link">Shop</a>         
+             </li>
+              <li>
+                <a href="#signup" class="nav__link">Signup</a>         
+             </li>
+           </ul>
+           <div class="nav__close" id="nav-close">
+           <i class="ri-close-fill"></i>
+           </div>
+        </div>
+        <div class="nav__buttons">
+         <i class="ri-shopping-cart-2-line nav__cart" id="cart-button"></i>
+  <span id="cart-count" class="cart-count">0</span>
+            <i class="ri-moon-fill nav__theme" id="theme-button"></i>
+        </div>
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-apps-2-fill"></i>
+           </div>
+        </div>
+    </nav>
+      </header>
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <img src="assets/img/p1.jpeg" alt="image" class="home__bg">
+            <div class="home__blur"></div>
+            <div class="home__container container grid">
+            <div class="home__data">
+            <div class="home__content-text">
+               <h1 class="home__title">Bring Home <br>a Plant, Grow a Story!</h1>
+               <p class="home__description">
+                Not sure what to plant? Let your vibe decide.
+               </p></div>
+               <a href="#vibe" class="button button__opa-30">Your vibe Plants
+                  <i class="ri-arrow-down-line"></i>
+               </a>
+            </div>
+            <div class="home__swiper swiper">
+               <div class="swiper-wrapper">
+                  <article class="home__article swiper-slide">
+                     <img src="assets/img/iamgeee8.jpg" alt="image" class="home__img">
+                  </article>
+                  <article class="home__article swiper-slide">
+                     <img src="assets/img/p4.webp" alt="image" class="home__img">
+                  </article>
+                  <article class="home__article swiper-slide">
+                     <img src="assets/img/p9.jpg" alt="image" class="home__img">
+                  </article>
+                  <article class="home__article swiper-slide">
+                     <img src="assets/img/p7.jpeg" alt="image" class="home__img">
+                  </article>
+               </div>
+               <div class="swiper-button-prev">
+                <i class="ri-arrow-left-long-line"></i>
+               </div>
+               <div class="swiper-button-next">
+               <i class="ri-arrow-right-long-fill"></i>
+               </div>
+            </div>
+            </div>
+         </section>
+
+         <!--==================== DESTINATION ====================-->
+         <section class="vibe section" id="vibe">
+  <img src="assets/img/image (3).jpg" alt="image" class="vibe__bg" />
+  <div class="vibe__container container grid">
+    <h2 class="vibe__title">What kind of plant vibe are you feeling today?</h2>
+    <div class="vibe__tags">
+      <button class="vibe__tag">Calm</button>
+      <button class="vibe__tag">Work</button>
+      <button class="vibe__tag vibe__tag--active">Pet friendly</button>
+      <button class="vibe__tag">Work Desk</button>
+      <button class="vibe__tag">Gifting</button>
+      <button class="vibe__tag">Low Maintenance</button>
+      <button class="vibe__tag">Air Purifying</button>
+    </div>
+  </div>
+</section>
+     
+    
+
+         
+
+         <!--==================== GALLERY ====================-->
+         <section class="shop section" id="shop">
+          <h2 class="section__title" >Featured Plants <br> Suiting your Vibe</h2>
+          <div class="shop__container container grid">
+            
+           <article class="shop__card">
+              <img src="assets/img/p7.jpeg" alt="image" class="shop__img">
+              <div class="shop__data">
+               <h3 class="shop__subtitle"> Gardenia Ananta</h3>
+               <h2 class="shop__title">The lucky Plant</h2>
+               <p class="shop__vibe">
+               <i class="ri-heart-line"></i>
+               <span> Cost: 4$</span>
+               </p>
+                 <button class="shop__cart-btn" data-name="Gardenia Ananta" data-price="4" data-img="assets/img/p7.jpeg">
+      <i class="ri-shopping-cart-2-line"></i> Add to Cart
+    </button>
+               <a href="checklist.html" class="shop__buy-btn">Buy Now</a>
+              </div>
+            </article>
+          <article class="shop__card">
+              <img src="assets/img/p7.jpeg" alt="image" class="shop__img">
+              <div class="shop__data">
+               <h3 class="shop__subtitle"> Gardenia Ananta</h3>
+               <h2 class="shop__title">The cheerful Plant</h2>
+               <p class="shop__vibe">
+               <i class="ri-heart-line"></i>
+               <span> Cost: 4$</span>
+               </p>
+                 <button class="shop__cart-btn" data-name="Gardenia Ananta" data-price="4" data-img="assets/img/p7.jpeg">
+      <i class="ri-shopping-cart-2-line"></i> Add to Cart
+    </button>
+               <a href="checklist.html" class="shop__buy-btn">Buy Now</a>
+
+              </div>
+            </article>
+         
+
+          <article class="shop__card">
+              <img src="assets/img/p8.jpg" alt="image" class="shop__img">
+              <div class="shop__data">
+               <h3 class="shop__subtitle"> Bamboo</h3>
+               <h2 class="shop__title">The low-maintainance Plant</h2>
+               <p class="shop__vibe">
+               <i class="ri-heart-line"></i>
+               <span> Cost: 4$</span>
+               </p>
+                 <button class="shop__cart-btn" data-name="Bamboo" data-price="4" data-img="assets/img/p8.jpg">
+      <i class="ri-shopping-cart-2-line"></i> Add to Cart
+    </button>
+               <a href="checklist.html" class="shop__buy-btn">Buy Now</a>
+
+              </div>
+            </article>
+         
+
+          <article class="shop__card">
+              <img src="assets/img/p9.jpg" alt="image" class="shop__img">
+              <div class="shop__data">
+               <h3 class="shop__subtitle"> Jade</h3>
+               <h2 class="shop__title">The happening Plant</h2>
+               <p class="shop__vibe">
+               <i class="ri-heart-line"></i>
+               <span> Cost: 4$</span>
+               </p>
+                 <button class="shop__cart-btn" data-name="Jade" data-price="4" data-img="assets/img/p9.jpg">
+                 <i class="ri-shopping-cart-2-line"></i> Add to Cart
+                 </button>
+               <a href="checklist.html" class="shop__buy-btn">Buy Now</a>
+
+              </div>
+            </article>
+         
+
+          <article class="shop__card">
+              <img src="assets/img/p10.jpeg" alt="image" class="shop__img">
+              <div class="shop__data">
+               <h3 class="shop__subtitle"> ABYA</h3>
+               <h2 class="shop__title">The silent plant</h2>
+               <p class="shop__vibe">
+               <i class="ri-heart-line"></i>
+               <span> Cost: 4$</span>
+               </p>
+                 <button class="shop__cart-btn" data-name="ABYA" data-price="4" data-img="assets/img/p10.jpeg">
+      <i class="ri-shopping-cart-2-line"></i> Add to Cart
+    </button>
+               <a href="checklist.html" class="shop__buy-btn">Buy Now</a>
+
+              </div>
+            </article>
+   
+
+          <article class="shop__card">
+              <img src="assets/img/OIP.jpeg" alt="image" class="shop__img">
+              <div class="shop__data">
+               <h3 class="shop__subtitle"> Jauije</h3>
+               <h2 class="shop__title">The lucky Plant</h2>
+               <p class="shop__vibe">
+               <i class="ri-heart-line"></i>
+               <span> Cost: 4$</span>
+               </p>
+                 <button class="shop__cart-btn" data-name="Jauije" data-price="4" data-img="assets/img/OIP.jpeg">
+      <i class="ri-shopping-cart-2-line"></i> Add to Cart
+    </button>
+               <a href="checklist.html" class="shop__buy-btn">Buy Now</a>
+
+              </div>
+            </article>
+          </div>
+         </section>
+         <div id="cart-modal" class="cart-modal">
+  <div class="cart-modal-content">
+    <span class="cart-close" id="cart-close">&times;</span>
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <button class="shop__buy-btn" id="checkout-btn">Checkout</button>
+  </div>
+</div>
+
+     <!--==================== TESTIMONIAL ====================-->
+         <section class="testimonial section" id="testimonial">
+           <h2 class="section__title">
+            What are<br> They Saying?
+           </h2> 
+           <div class="testimonial__container container grid">
+            <img src="assets/img/p1.jpeg" alt="img" class="testimonial__img">
+            <div class="testimonial__swiper swiper">
+               <div class="swiper-wrapper">
+                  <div class="testimonial__card swiper-slide">
+                    <h2 class="testimonial__title"> </h2> 
+                    <p class="testimonial__description">
+                     “Naming my plant and caring for it daily has become a calming ritual.
+                     I love how Planté makes it so easy to stay on track the checklist is adorable,
+                     and the vibe feels so personal!”</p>
+                     <div class="testimonial__footer">
+                        <img src="assets/img/t1.webp" alt="image">
+                        <div class="testimonial__info">
+                           <h3>Will</h3>
+                           <p>Photographer</p>
+                        </div>
+                  </div>
+               </div>
+                <div class="testimonial__card swiper-slide">
+                    <h2 class="testimonial__title"></h2> 
+                    <p class="testimonial__description">
+                     “Planté completely changed the way I connect with my space.
+                      Giving my plant a name made it feel like a part of the family, 
+                      and the daily care steps are the sweetest reminders.”</p>
+                     <div class="testimonial__footer">
+                        <img src="assets/img/t2.avif" alt="image">
+                        <div class="testimonial__info">
+                           <h3>Daisy</h3>
+                           <p>Influencer</p>
+                        </div>
+                  </div>
+               </div>
+               
+               
+
+               </div>
+               <div class="swiper-button-prev">
+                <i class="ri-arrow-left-long-line"></i>
+               </div> 
+               <div class="swiper-button-next">
+                  <i class="ri-arrow-right-long-fill"></i>
+               </div>
+            </div>
+           </div>
+         </section>     
+
+         <!--==================== JOIN ====================-->
+         <section class="join section" id="join">
+           <div class="join__container container grid">
+            <div class="join__data">
+               <h2 class="section__title">Your Journey <br> Starts Here </h2>
+               <p class="join__description">
+                  Get plants for every Vibe from us.
+               </p>
+               <form action="" class="join__form">
+               <input type="email" placeholder="Enter your email" class="join__input">
+               <button type="submit" class="join__button button">
+                 Join our Newletter
+                 <i class="ri-arrow-right-long-line"></i>
+               </button>
+            </form>
+            </div>
+            <img src="assets/img/p5.avif" alt="image" class="join__img">
+           </div> 
+         </section>
+      </main>
+      <!-- Voice Assistant Floating Button & Panel -->
+               <!-- Floating Voice Assistant Button -->
+<div id="voice-assistant">
+  <button id="voice-button" title="Talk to Planté">
+    <!-- SVG or icon for mic -->
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+      <circle cx="12" cy="12" r="12" fill="#388e3c"/>
+      <path d="M12 17c2.21 0 4-1.79 4-4v-3a4 4 0 1 0-8 0v3c0 2.21 1.79 4 4 4zm5-4v-3a5 5 0 1 0-10 0v3c0 2.76 2.24 5 5 5s5-2.24 5-5zm-5 7c-2.67 0-8 1.34-8 4v1h16v-1c0-2.66-5.33-4-8-4z" fill="#fff"/>
+    </svg>
+  </button>
+  <div id="voice-panel" class="hidden">
+    <div id="voice-status">Click mic & speak…</div>
+    <div id="voice-commands">
+      <p>Try saying:</p>
+      <ul>
+        <li>"Go to shop"</li>
+        <li>"Add to cart"</li>
+        <li>"View my plants"</li>
+        <li>"Scroll down"</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+      <!--==================== FOOTER ====================-->
+ <footer class="footer">
+  <div class="footer__container">
+    
+    <div class="footer__section logo-section">
+      <a href="#" class="footer__logo">
+        <img src="assets/img/logo.png" alt="Plante Logo">
+        <span>Planté</span>
+      </a>
+    </div>
+
+    <div class="footer__section">
+      <h3 class="footer__title">Support</h3>
+      <ul class="footer__links">
+        <li><a href="#" class="footer__link">Terms and Services</a></li>
+        <li><a href="#" class="footer__link">Payments</a></li>
+        <li><a href="#" class="footer__link">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__section">
+      <h3 class="footer__title">About</h3>
+      <ul class="footer__links">
+        <li><a href="#" class="footer__link">About us</a></li>
+        <li><a href="#" class="footer__link">Features</a></li>
+        <li><a href="#" class="footer__link">News and Blogs</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__section">
+      <h3 class="footer__title">Contact</h3>
+      <ul class="footer__links">
+        <li><a href="#" class="footer__link">Call Center</a></li>
+        <li><a href="#" class="footer__link">Support</a></li>
+        <li><a href="#" class="footer__link">Contact Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <span class="footer__copy">© 2025 Planté. All rights reserved.</span>
+</footer>
+
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-fill"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="assets/js/scrollreveal.min.js"></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js" defer></script>
+
+     
+
+</div>
+ <!-- Blurred overlay -->
+<div id="blur-overlay" class="hidden"></div>
+
+<!-- Sidebar Signup -->
+ <a href="#signup">Signup</a>
+<div id="signup-sidebar" class="hidden">
+  <button id="close-signup" aria-label="Close Signup">&times;</button>
+  <h2>Signup for Planté</h2>
+  <form id="signup-form">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required placeholder="Enter username">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required placeholder="Enter email">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required placeholder="Enter password">
+
+    <button type="submit">Signup</button>
+  </form>
+</div>
+
+
+   </body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Plant Dashboard | Planté</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sage: #b7e4c7;
+      --olive: #6b8e23;
+      --cream: #f6f8f4;
+      --brown: #a68a64;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--cream);
+      margin: 0;
+      padding: 0;
+    }
+   header {
+  background: rgba(107, 142, 35, 0.5); /* olive with transparency */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+    
+    .plant-dashboard {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+    .plant-card {
+      background: white;
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .plant-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+    .plant-image {
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 1rem;
+    }
+    .plant-name {
+      font-family: 'Playfair Display', serif;
+      color: var(--olive);
+      margin: 0 0 1rem;
+    }
+    .plant-details p {
+      margin: 0.5rem 0;
+    }
+    .shop__buy-btn {
+      background: var(--sage);
+      color: #2d4739;
+      border: none;
+      border-radius: 2rem;
+      padding: 0.7rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 2px 8px #e0e0e0;
+      transition: box-shadow 0.2s, background 0.2s;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .shop__buy-btn:hover {
+      background: #95d5b2;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    .care-log {
+      background: var(--cream);
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-top: 2rem;
+    }
+    .care-day {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .care-day:last-child {
+      border-bottom: none;
+    }
+    .care-day h3 {
+      color: var(--olive);
+      font-family: 'Playfair Display', serif;
+      margin: 0 0 0.5rem;
+    }
+    .care-day label {
+      display: block;
+      margin: 0.5rem 0;
+    }
+    .care-day input {
+      margin-right: 0.5rem;
+    }
+    .back-home-btn {
+  display: block;
+  margin: 2rem auto 0 auto;
+  background: rgba(183, 228, 199, 0.7); /* semi-transparent sage */
+  color: #2d4739;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8rem 2.2rem;
+  box-shadow: 0 2px 8px #e0e0e0;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.2s, box-shadow 0.2s;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.back-home-btn:hover {
+  background: rgba(107, 142, 35, 0.8);
+  color: #fff;
+  box-shadow: 0 4px 16px #b7e4c7;
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌱 Planté Dashboard</h1>
+  </header>
+  <div class="plant-dashboard">
+    <div class="plant-card">
+      <img src="leafy.avif" alt="Leafy" class="plant-image">
+      <h2 class="plant-name">Meet Leafy</h2>
+      <div class="plant-details">
+        <p><strong>Type:</strong> Snake Plant</p>
+        <p><strong>Bought On:</strong> June 12, 2025</p>
+        <p><strong>Description:</strong> Perfect for beginners. Thrives in low light and purifies the air.</p>
+      </div>
+      <a href="#carelog" class="shop__buy-btn">View Care Log</a>
+    </div>
+    <div id="carelog" class="care-log">
+      <h2>Leafy's Care Log</h2>
+      <div class="care-day">
+        <h3>Day 1</h3>
+        <label><input type="checkbox"> Watered?</label>
+        <label><input type="checkbox"> Is it healthy?</label>
+        <label><input type="checkbox"> Is it in sunlight?</label>
+      </div>
+      <div class="care-day">
+        <h3>Day 2</h3>
+        <label><input type="checkbox"> Watered?</label>
+        <label><input type="checkbox"> Is it healthy?</label>
+        <label><input type="checkbox"> Is it in sunlight?</label>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Smooth scroll to care log when "View Care Log" is clicked
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Optional: Add ripple effect to checkboxes
+    document.querySelectorAll('.care-day input[type="checkbox"]').forEach(checkbox => {
+      checkbox.addEventListener('change', function() {
+        if (this.checked) {
+          this.parentElement.style.color = '#6b8e23';
+        } else {
+          this.parentElement.style.color = '';
+        }
+      });
+    });
+  </script>
+  <a href="index.html" class="back-home-btn">← Back to Home</a>
+
+</body>
+</html>
